@@ -1,0 +1,43 @@
+/* Estilos Vista Movil*/
+.header {
+    background-color: #736A8D;
+    padding: 16px;
+ 
+}
+
+.header_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo {
+  font-weight: 700;
+  font-size: 20px;
+  color:#722C46;
+}
+
+.header_toggle {
+  display: block;
+  font-size: 24px;
+  background: none;
+  cursor: pointer;
+}
+.header_nav {
+  display: none;
+}
+
+.header_nav--abierto {
+  display: block;
+}
+
+.header_nav-list {
+  list-style: none;
+  display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 16px;
+    border-top: 1px solid #fff;
+    
+ 
+}

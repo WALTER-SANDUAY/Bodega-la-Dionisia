@@ -1,0 +1,29 @@
+/* vista movil */
+.main {
+    background-color: #D7BAA8;
+    min-height: 790px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 24px;
+    
+}
+.main_hero{
+    text-align: center;
+    
+}
+.main_title{
+    color: #736A8D;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.main_subtitle{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #722C46;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-bottom: 16px;
+}
