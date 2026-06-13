@@ -1,7 +1,16 @@
+/* vista movil */
+
 .footer{
     background-color: #736A8D; 
-   
+   color: #722C46;
     text-align: center;
     padding: 16px;
 
+}
+
+/* Vista Pc */
+@media (min-width: 768px) {
+  .footer {
+    padding: 16px 40px;
+  }
 }

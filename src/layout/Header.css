@@ -12,16 +12,28 @@
 }
 
 .header_logo {
-  font-weight: 700;
-  font-size: 20px;
-  color:#722C46;
+height: 32px;
 }
 
 .header_toggle {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   font-size: 24px;
   background: none;
+  border: none;
   cursor: pointer;
+  padding: 0px;
+}
+.header_linea{
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: #722C46;  
+    border-radius: 2px;
+    
+    
+
 }
 .header_nav {
   display: none;
@@ -38,6 +50,40 @@
     gap: 14px;
     margin-top: 16px;
     border-top: 1px solid #fff;
-    
+    text-decoration: none;
+
  
+}
+.header_nav-list a {
+  color: #722C46;
+  text-decoration: none;
+  font-size: 18px;
+}
+/* Vista Pc */
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+  }
+  .header_logo {
+    height: 50px;
+  }
+
+    .header_toggle {
+        display: none;
+  }
+ 
+  .header_nav {
+    display: block;
+  }
+
+  .header_nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin-top: 18px;
+    border-top: none;
+  }
 }

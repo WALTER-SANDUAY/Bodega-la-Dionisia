@@ -27,3 +27,15 @@
     font-weight: 300;
     margin-bottom: 16px;
 }
+
+/* Vista Pc */
+@media (min-width: 768px) {
+   
+    .main_title {
+        font-size: 40px;
+        margin-bottom: 16px;
+    }
+    .main_subtitle {
+        font-size: 16px;
+    }
+}
