@@ -1,16 +1,29 @@
-# React + Vite
+# 🍷 Finca La Dionisia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Guía de Markdown
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Descripción del Comercio
 
-## React Compiler
+| Campo | Detalle |
+|---|---|
+| **Nombre** | Finca La Dionisia |
+| **Ubicación** | Santo Tomás, Tinogasta, Catamarca |
+| **Telefono** | +5493416930658 |
+| **Objetivos del sitio** | Mostrar los vinos, la galería de fotos de la finca y facilitar el contacto directo por WhatsApp |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Análisis Técnico: SPA y PWA
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ¿Qué es una SPA?
+Una SPA (Single Page Application) es una aplicación web que carga un único documento HTML y actualiza el contenido dinámicamente sin recargar la página. Esto se logra con React, permitiendo una navegación fluida entre las secciones del sitio.
+
+### ¿Por qué usamos SPA en Finca La Dionisia?
+Porque permite que el usuario navegue entre Inicio, Nuestros Vinos, Galería y Contacto sin interrupciones, mejorando la experiencia y el tiempo de permanencia en el sitio.
+
+### ¿Qué es una PWA?
+Una PWA (Progressive Web App) combina lo mejor de un sitio web y una app móvil. Mediante Service Workers y un manifiesto web, permite que el sitio funcione sin conexión y se instale en el celular como una app nativa.
+
+### ¿Por qué usamos PWA en Finca La Dionisia?
+Porque la finca se encuentra en una zona rural donde la conectividad puede ser inestable. Con PWA, los clientes y turistas pueden ver el catálogo de vinos y el contacto incluso sin señal, y acceder al sitio desde la pantalla de su celular sin necesidad de una tienda de aplicaciones.
