@@ -28,6 +28,7 @@ Una PWA (Progressive Web App) combina lo mejor de un sitio web y una app móvil.
 ### ¿Por qué usamos PWA en Finca La Dionisia?
 Porque la finca se encuentra en una zona rural donde la conectividad puede ser inestable. Con PWA, los clientes y turistas pueden ver el catálogo de vinos y el contacto incluso sin señal, y acceder al sitio desde la pantalla de su celular sin necesidad de una tienda de aplicaciones.
 
+
 ETAPA 2-
 ## 2. Relevamiento de Necesidades 
 | Necesidades destacada | Solución de la propuesta |
@@ -44,16 +45,30 @@ ETAPA 2-
 
 ## 4. Arquitectura del proyecto
 Estructura inicial de carpetas:
-/SRC
+/SRC: carpeta general.
 /components
-Header.jsx
-Footer.jsx
-Main.jsx
-Gallery.jsx
-/assets
-/imagenes
-/styles
-/layout
+Header.jsx: En esta sección esta ubicada la barra superior con el nombre y el logo que representan el proyecto y los botones de navegación.
+
+Footer.jsx: Pie de página conteniendo datos de contacto, redes sociales y ubicación de la finca donde funciona la bodega. mostrará los caminos más sercanos para llegar a la misma. 
+
+Main.jsx: acá encontraremos todo el contenido principal de la finca (presentación de la misma).
+
+Gallery.jsx: En esta sección se encontrara la galeria de vinos o imágenes que muestren el producto de la mejor manera pocible. 
+
+ContactFrom.jsx: en este punto se mostrara un formulario de contacto.
+
+/assets: carpeta de recursos esteticos 
+/imagenes: en eta carpeta se encuentran guardadas las fotos de los vinos, algunas de la finca en si y otras que muestran gente disfrutando el momento. 
+
+/Icons: Iconos de navegación y redes sociales. 
+
+/styles: guarda Hojas de estilo CSS. 
+
+/layout: carpetas de estructura general de diseño. 
+
+Applayout.jsx: Define como se organisan el Header, Main y el Footer en la página. 
+
+Gridlayout.jsx: estructura columnas o filas para mostrar productos o imágenes 
 
 Ejemplo de componente básico:
 ```jsx
