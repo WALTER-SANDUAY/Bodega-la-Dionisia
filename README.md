@@ -27,3 +27,45 @@ Una PWA (Progressive Web App) combina lo mejor de un sitio web y una app móvil.
 
 ### ¿Por qué usamos PWA en Finca La Dionisia?
 Porque la finca se encuentra en una zona rural donde la conectividad puede ser inestable. Con PWA, los clientes y turistas pueden ver el catálogo de vinos y el contacto incluso sin señal, y acceder al sitio desde la pantalla de su celular sin necesidad de una tienda de aplicaciones.
+
+ETAPA 2-
+## 2. Relevamiento de Necesidades 
+| Necesidades destacada | Solución de la propuesta |
+|------------------------|--------------------------|
+| Mostrar productos      | Galeria con fotos y precios |
+| Hinformar historia     | Sección "nuestra historia" con texto he himágenes |
+| contacto rápido        | Formulario con nombre, email y mensaje |
+------------------------------------------------------------------------------
+## 3. Fundamentación Técnica 
+**Aplicación en este proyecto:** El catalogo de vinos se muestrá en una sola vista, con navegación interna sin recargas. 
+
+### PWA (Progressive web App)
+**Aplicación en ete proyecto:** Los clientes podran guardar la Web en su selular y accseder a la misma incluso con conexion limitada. 
+
+## 4. Arquitectura del proyecto
+Estructura inicial de carpetas:
+/SRC
+/components
+Header.jsx
+Footer.jsx
+Main.jsx
+Gallery.jsx
+/assets
+/imagenes
+/styles
+/layout
+
+Ejemplo de componente básico:
+```jsx
+function Header() {
+  return (
+    <header>
+      <nav>
+        <h1>Finca La Dionicia</h1>
+      </nav>
+    </header>
+  );
+}
+
+
+
