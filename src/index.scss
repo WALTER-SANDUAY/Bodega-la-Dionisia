@@ -1,0 +1,70 @@
+@use './styles/variables' as v;
+
+:root {
+  --primary: #{v.$color-primary};
+  --primary-dark: #{v.$color-primary-dark};
+  --accent: #{v.$color-accent};
+  --accent-light: #{v.$color-accent-light};
+  --secondary: #{v.$color-secondary};
+  --secondary-light: #{v.$color-secondary-light};
+  --white: #{v.$color-white};
+  --text: #{v.$color-text};
+  --text-light: #{v.$color-text-light};
+
+  --shadow-sm: #{v.$shadow-sm};
+  --shadow-md: #{v.$shadow-md};
+  --shadow-lg: #{v.$shadow-lg};
+
+  --radius: #{v.$radius};
+  --radius-lg: #{v.$radius-lg};
+  --transition: #{v.$transition};
+
+  --font-serif: #{v.$font-serif};
+  --font-sans: #{v.$font-sans};
+
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}

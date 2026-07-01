@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import logo from '../assets/Logo_principal.png';
-import './Header.css';
+import './Header.scss';
 
 function Header() {
     const [menuAbierto, setMenuAbierto] = useState(false);

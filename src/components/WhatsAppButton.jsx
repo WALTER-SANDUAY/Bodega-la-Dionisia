@@ -1,4 +1,4 @@
-import './WhatsAppButton.css';
+import './WhatsAppButton.scss';
 
 // Número tomado del README del proyecto (formato internacional, sin signos ni espacios).
 const NUMERO_WHATSAPP = '5493416930658';

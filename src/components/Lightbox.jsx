@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import './Lightbox.css';
+import './Lightbox.scss';
 
 function Lightbox({ src, alt, onClose }) {
   useEffect(() => {

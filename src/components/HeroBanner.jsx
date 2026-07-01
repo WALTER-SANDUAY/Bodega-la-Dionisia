@@ -1,5 +1,5 @@
 import heroImage from '../Finca la Dionicia fotos/00be0c61-d090-4a9e-b90f-b7e04b3725f8.jpg';
-import './HeroBanner.css';
+import './HeroBanner.scss';
 
 function HeroBanner() {
   return (

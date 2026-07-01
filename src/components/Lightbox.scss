@@ -1,3 +1,5 @@
+@use '../styles/mixins' as m;
+
 .lightbox {
   position: fixed;
   inset: 0;
@@ -64,7 +66,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@include m.respond-to(tablet) {
   .lightbox {
     padding: 16px;
   }

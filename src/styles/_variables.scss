@@ -1,0 +1,35 @@
+// Variables SCSS — colores y tipografía de Finca la Dionisia.
+// Se usan acá y también se vuelcan a custom properties de CSS (:root)
+// en index.scss, para que estén disponibles en runtime (por si en el
+// futuro se quiere cambiar el tema dinámicamente con JS).
+
+// Colores
+$color-primary: #736A8D;
+$color-primary-dark: #5C5570;
+$color-accent: #722C46;
+$color-accent-light: #8E3A58;
+$color-secondary: #D7BAA8;
+$color-secondary-light: #E8D5C8;
+$color-white: #FFFFFF;
+$color-text: #4A4452;
+$color-text-light: #8A8294;
+
+// Sombras
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+$shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+
+// Bordes y transiciones
+$radius: 12px;
+$radius-lg: 20px;
+$transition: 0.3s ease;
+
+// Tipografía
+$font-serif: 'Playfair Display', Georgia, serif;
+$font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+// Breakpoints (usados por el mixin respond-to en _mixins.scss)
+$breakpoints: (
+  mobile: 480px,
+  tablet: 768px,
+);

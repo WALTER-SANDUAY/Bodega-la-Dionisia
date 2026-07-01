@@ -16,7 +16,7 @@ import {
     obtenerVinos,
     borrarVino,
 } from '../services/contenidoService';
-import './Admin.css';
+import './Admin.scss';
 
 const VINO_VACIO = { nombre: '', anio: '', variedad: '', descripcion: '', precio: '', badge: 'Tinto' };
 const TIPOS_VINO = ['Tinto', 'Blanco', 'Rosé'];

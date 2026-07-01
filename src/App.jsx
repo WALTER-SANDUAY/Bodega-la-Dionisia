@@ -7,7 +7,7 @@ import Footer from './layout/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import Login from './pages/Login';
 import Admin from './pages/Admin';
-import './App.css';
+import './App.scss';
 
 function Inicio() {
   return (

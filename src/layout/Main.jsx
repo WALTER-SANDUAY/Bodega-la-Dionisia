@@ -7,7 +7,7 @@ import vinoReserva from '../Finca la Dionicia fotos/fac750a1-442c-4e2c-a06f-3922
 import foto4 from '../Finca la Dionicia fotos/33bc434a-7793-4238-aee0-7486e7551135.jpg';
 import foto5 from '../Finca la Dionicia fotos/6a7bf868-1255-4436-94d3-d1f7558f1ecb.jpg';
 import { obtenerGaleria, obtenerVideos, obtenerNovedades, obtenerVinos } from '../services/contenidoService';
-import './Main.css';
+import './Main.scss';
 
 const galeriaFotos = [
   { src: vinoTinto, alt: 'Bodega' },

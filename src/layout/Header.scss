@@ -1,3 +1,5 @@
+@use '../styles/mixins' as m;
+
 .header {
   position: sticky;
   top: 0;
@@ -140,7 +142,7 @@
   transform: translateY(-1px);
 }
 
-@media (min-width: 768px) {
+@include m.respond-from(tablet) {
   .header_inner {
     height: 72px;
   }

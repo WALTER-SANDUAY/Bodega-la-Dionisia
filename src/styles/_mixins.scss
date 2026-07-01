@@ -1,0 +1,40 @@
+// Mixins reutilizables de Finca la Dionisia.
+
+@use 'sass:map';
+@use 'variables' as v;
+
+// Mixin de responsive: uso -> @include respond-to(tablet) { ... }
+// Centraliza los breakpoints para no repetir "@media (max-width: 768px)"
+// suelto en cada archivo.
+@mixin respond-to($breakpoint) {
+  @if map.has-key(v.$breakpoints, $breakpoint) {
+    @media (max-width: map.get(v.$breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "No existe el breakpoint `#{$breakpoint}`.";
+  }
+}
+
+// Complemento de respond-to: para reglas "de acá para arriba"
+// (ej: layout de escritorio), en vez de "de acá para abajo".
+@mixin respond-from($breakpoint) {
+  @if map.has-key(v.$breakpoints, $breakpoint) {
+    @media (min-width: map.get(v.$breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "No existe el breakpoint `#{$breakpoint}`.";
+  }
+}
+
+// Mixin de centrado flex, se repite en varios componentes (botones,
+// íconos, overlays).
+@mixin flex-center($gap: 0) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @if $gap != 0 {
+    gap: $gap;
+  }
+}

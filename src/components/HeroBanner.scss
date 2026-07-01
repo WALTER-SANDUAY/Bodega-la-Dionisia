@@ -1,3 +1,5 @@
+@use '../styles/mixins' as m;
+
 .hero {
   position: relative;
   width: 100%;
@@ -7,9 +9,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include m.flex-center;
 }
 
 .hero_overlay {
@@ -38,6 +38,8 @@
   text-align: center;
   padding: 24px;
   max-width: 700px;
+  // Animación con propósito: la sección hero aparece con un leve
+  // desplazamiento hacia arriba en vez de "aparecer de golpe".
   animation: heroFadeIn 1s ease forwards;
 }
 
@@ -104,27 +106,27 @@
 .hero_cta--primary {
   color: var(--white);
   background: var(--accent);
-}
 
-.hero_cta--primary:hover {
-  background: var(--accent-light);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(114, 44, 70, 0.35);
+  &:hover {
+    background: var(--accent-light);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(114, 44, 70, 0.35);
+  }
 }
 
 .hero_cta--outline {
   color: var(--white);
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.6);
+
+  &:hover {
+    border-color: var(--white);
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+  }
 }
 
-.hero_cta--outline:hover {
-  border-color: var(--white);
-  background: rgba(255, 255, 255, 0.1);
-  transform: translateY(-2px);
-}
-
-@media (max-width: 768px) {
+@include m.respond-to(tablet) {
   .hero {
     height: 85vh;
     min-height: 450px;
