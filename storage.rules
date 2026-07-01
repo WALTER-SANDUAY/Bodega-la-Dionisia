@@ -1,0 +1,35 @@
+rules_version = '2';
+
+// Reglas de Storage (el "bucket") para Finca la Dionisia.
+// Cualquiera puede LEER los archivos (mostrar fotos/videos en el sitio).
+// Solo un usuario autenticado (el administrador) puede SUBIR/BORRAR.
+// Se limita el tamaño de archivo para evitar subidas accidentales enormes.
+
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    match /galeria/{archivo} {
+      allow read: if true;
+      allow write: if request.auth != null
+                   && request.resource.size < 10 * 1024 * 1024; // 10 MB
+    }
+
+    match /videos/{archivo} {
+      allow read: if true;
+      allow write: if request.auth != null
+                   && request.resource.size < 100 * 1024 * 1024; // 100 MB
+    }
+
+    match /novedades/{archivo} {
+      allow read: if true;
+      allow write: if request.auth != null
+                   && request.resource.size < 10 * 1024 * 1024; // 10 MB
+    }
+
+    match /vinos/{archivo} {
+      allow read: if true;
+      allow write: if request.auth != null
+                   && request.resource.size < 10 * 1024 * 1024; // 10 MB
+    }
+  }
+}
